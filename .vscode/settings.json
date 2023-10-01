@@ -14,5 +14,13 @@
   "[javascript]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultFormatter":"esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
   "deno.unstable": true
 }
