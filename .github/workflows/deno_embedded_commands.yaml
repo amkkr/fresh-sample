@@ -21,4 +21,4 @@ jobs:
           deno lint
       - name: Run tests
         run: |
-          deno task test --import-map=import_map.json
+          deno task test -- --import-map=import_map.json
