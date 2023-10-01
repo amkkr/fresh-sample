@@ -6,10 +6,12 @@ const CONN_INFO: ServeHandlerInfo = {
   remoteAddr: { hostname: "127.0.0.1", port: 53496, transport: "tcp" },
 };
 
-Deno.test("should return greeting", async (t) => {
-  const handler = await createHandler(manifest);
-  const actual = await handler(new Request("http://127.0.0.1"), CONN_INFO);
-  const sut = 200;
+Deno.test("routes.example/tests/[key]", () => {
+  Deno.test("should status is 200 ", async () => {
+    const handler = await createHandler(manifest);
+    const actual = await handler(new Request("http://127.0.0.1"), CONN_INFO);
+    const sut = 200;
 
-  assertEquals(actual.status, sut);
+    assertEquals(actual.status, sut);
+  });
 });

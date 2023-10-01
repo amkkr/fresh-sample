@@ -21,4 +21,4 @@ jobs:
           deno lint
       - name: Run tests
         run: |
-          deno test --allow-read --allow-env --allow-net
+          deno task test
