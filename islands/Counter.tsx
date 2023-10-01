@@ -5,10 +5,6 @@ interface CounterProps {
   count: Signal<number>;
 }
 
-const hoge: Record<string, string> = {
-  "aaaa": "aaaaaaa",
-};
-
 export default function Counter(props: CounterProps) {
   return (
     <div class="flex gap-8 py-6">
