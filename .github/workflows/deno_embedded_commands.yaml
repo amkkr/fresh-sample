@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: denoland/setup-deno@main
+      - uses: denoland/setup-deno@v1
         with:
-          deno-version: "1.21.0"
+          deno-version: "1.37.1"
       - name: Run fmt
         run: |
           deno fmt --check
@@ -21,4 +21,4 @@ jobs:
           deno lint
       - name: Run tests
         run: |
-          deno task test -- --import-map=import_map.json
+          deno task test
