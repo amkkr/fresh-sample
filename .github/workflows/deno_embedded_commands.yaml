@@ -13,7 +13,7 @@ jobs:
       - name: Run fmt
         run: |
           deno fmt --check
-      -name: check
+      - name: check
         run: |
           pwd
       - name: Run lint
