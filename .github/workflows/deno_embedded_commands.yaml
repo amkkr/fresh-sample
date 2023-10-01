@@ -1,6 +1,6 @@
 name: deno_embedded_commands
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   test:
