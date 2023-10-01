@@ -21,4 +21,4 @@ jobs:
           deno lint
       - name: Run tests
         run: |
-          deno task test
+          deno test --import-map=./deno.json --allow-read --allow-env
