@@ -13,7 +13,10 @@
         "fresh",
         "recommended"
       ]
-    }
+    },
+    "exclude": [
+      "_fresh"
+    ]
   },
   "imports": {
     "$fresh/": "https://deno.land/x/fresh@1.4.3/",
@@ -32,5 +35,10 @@
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitReturns": true
+  },
+  "fmt": {
+    "exclude": [
+      "_fresh"
+    ]
   }
 }
