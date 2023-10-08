@@ -1,7 +1,16 @@
 {
   "deno.enable": true,
   "deno.lint": true,
+  "editor.formatOnSave": true,
   "editor.defaultFormatter": "denoland.vscode-deno",
+  "deno.suggest.autoImports": true,
+  "deno.suggest.completeFunctionCalls": true,
+  "deno.suggest.imports.autoDiscover": true,
+  "deno.suggest.imports.hosts": {
+    "https://deno.land": true
+  },
+  "deno.suggest.names": true,
+  "deno.suggest.paths": true,
   "[typescriptreact]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
@@ -14,6 +23,14 @@
   "[javascript]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
+  "[json]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
   "[yaml]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
@@ -21,6 +38,13 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.formatOnSave": true,
+  "deno.cacheOnSave": true,
+  "deno.codeLens.implementations": true,
+  "deno.codeLens.references": true,
+  "deno.codeLens.test": true,
+  "deno.inlayHints.enumMemberValues.enabled": true,
+  "deno.inlayHints.parameterTypes.enabled": true,
+  "deno.inlayHints.variableTypes.enabled": true,
+  "deno.inlayHints.propertyDeclarationTypes.enabled": true,
   "deno.unstable": true
 }
