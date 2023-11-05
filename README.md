@@ -22,3 +22,19 @@ In local test.
 ```
 $ deno task test
 ```
+
+### Build
+
+Build this project
+
+```
+$ deno task build
+```
+
+### update Fresh
+
+Update fresh project.
+
+```
+$ deno task update
+```
